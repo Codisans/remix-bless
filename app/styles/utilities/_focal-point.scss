@@ -1,0 +1,52 @@
+.focal-point {
+	&-bottom,
+	&-bottom * {
+		@apply object-bottom;
+	}
+
+	&-center,
+	&-center * {
+		@apply object-center;
+	}
+
+	&-left {
+		@apply object-left;
+
+		* {
+			@apply object-left;
+		}
+
+		&-bottom,
+		&-bottom * {
+			@apply object-left-bottom;
+		}
+
+		&-top,
+		&-top * {
+			@apply object-left-top;
+		}
+	}
+
+	&-right {
+		@apply object-right;
+
+		* {
+			@apply object-right;
+		}
+
+		&-bottom,
+		&-bottom * {
+			@apply object-right-bottom;
+		}
+
+		&-top,
+		&-top * {
+			@apply object-right-top;
+		}
+	}
+
+	&-top,
+	&-top * {
+		@apply object-top;
+	}
+}

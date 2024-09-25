@@ -1,0 +1,18 @@
+@layer base {
+	.component {
+		&--medium {
+			@apply py-12;
+		}
+
+		&--flat {
+			@apply py-0;
+		}
+
+		&--text-and-media,
+		&--text {
+			& + .component--media {
+				@apply mt-8 lg:mt-12;
+			}
+		}
+	}
+}

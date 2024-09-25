@@ -1,0 +1,11 @@
+@layer utilities {
+	.clip-container {
+		clip-path: inset(0px);
+		-webkit-clip-path: inset(0px);
+
+		&-b-full {
+			clip-path: inset(0px 0px 100% 0px);
+			-webkit-clip-path: inset(0px 0px 100% 0px);
+		}
+	}
+}
